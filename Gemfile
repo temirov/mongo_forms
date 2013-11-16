@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0', patchlevel: "247"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 gem 'mongoid', github: 'mongoid/mongoid'
@@ -42,3 +44,6 @@ end
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
+
+# Used for Heroku deployment
+gem 'rails_12factor'
