@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Relative:
+  = @extended_family.relative
+%p
+  %b Alive:
+  = @extended_family.alive
+
+= link_to 'Edit', edit_extended_family_path(@extended_family)
+\|
+= link_to 'Back', extended_families_path

@@ -1,0 +1,21 @@
+#navigation_menu
+  #relatives_grouping
+    = link_to_unless_current "My Family", "#", class: "pure-menu-heading" 
+    %ul
+      %li.pure-menu-selected= link_to_unless_current "Immediate Familty", "#"
+      %li= link_to_unless_current "Home animals", "#"
+      %li= link_to_unless_current "Distant relatives", "#"
+
+#family_memebers_table
+  %table
+    %thead
+      %tr
+        %th
+        %th Relative
+        %th Alive
+        %th
+          #new_relative_link
+            = render 'new_relative_link'
+    %tbody#relatives
+      = render @extended_families
+#new_relative_form

@@ -1,0 +1,2 @@
+module ExtendedFamiliesHelper
+end

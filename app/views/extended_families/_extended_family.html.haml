@@ -1,0 +1,9 @@
+%tr
+  %td
+    = link_to edit_extended_family_path(extended_family), remote: true do
+      = fa_icon "edit"
+  %td= extended_family.relative
+  %td= extended_family.alive
+  %td
+    = link_to extended_family, method: :delete, data: { confirm: 'Are you sure?' }, class: :small_button, remote: true do
+      = fa_icon "minus"

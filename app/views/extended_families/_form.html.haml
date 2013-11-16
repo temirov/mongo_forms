@@ -1,0 +1,15 @@
+= form_for @extended_family, remote: true do |f|
+  - if @extended_family.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@extended_family.errors.count, "error")} prohibited this extended_family from being saved:"
+      %ul
+        - @extended_family.errors.full_messages.each do |msg|
+          %li= msg
+  %fieldset
+    = f.label :relative
+    = f.text_field :relative
+    = f.label :alive
+    = f.check_box :alive
+    = button_tag type: :button, id: :cancel_button, class: :small_button do
+      Cancel
+    = f.submit 'Save', class: "small_button primary_button"
