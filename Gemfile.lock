@@ -146,7 +146,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
-  coffee-rails (~> 4.0.0)
+  coffee-rails (~> 4)
   debugger
   font-awesome-rails
   haml-rails
@@ -154,7 +154,7 @@ DEPENDENCIES
   jquery-rails
   mongoid!
   pure-sass
-  rails (= 4.0.1)
+  rails (~> 4)
   rails_12factor
   sass-rails (~> 4.0.0)
   sdoc
