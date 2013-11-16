@@ -21,9 +21,7 @@ test:
 production:
   sessions:
     default:
-      database: mongo_forms_production
-      hosts:
-        - localhost:27017
+      uri: <%= ENV['MONGOHQ_URL'] %>
       options:
-        read: primary
-  options:
+        skip_version_check: true
+        safe: true
